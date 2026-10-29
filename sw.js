@@ -1,5 +1,5 @@
 // 2026珠海 離線快取（產出網站.py 自動產生，不要手改）
-const CACHE = "zh-f941c8d255";
+const CACHE = "zh-5e45a961c5";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon-180.png", "./icon-512.png"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
